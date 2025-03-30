@@ -20,7 +20,7 @@
         main{
             background-color:rgba(128, 128, 128, 0.253);
             width:100vw;
-            height:300vh;
+            height:auto;
         }
         .cabecalho{
             display:flex;
@@ -129,34 +129,127 @@
         font-size:2.5rem;
        }
        .div-engenharia{
-        background-color:rgba(22, 22, 22, 0.288);
+        background-color:rgba(22, 22, 22, 0.685);
         border-top-left-radius:80px;
         border-top-right-radius:80px;
         height:250px;
         width:15vw;
        }
        .div-sistemas{
-        background-color:rgba(22, 22, 22, 0.288);
+        background-color:rgba(22, 22, 22, 0.685);
         border-top-left-radius:80px;
         border-top-right-radius:80px;
         height:250px;
         width:15vw;
        }
        .div-robotica{
-        background-color:rgba(22, 22, 22, 0.288);
+        background-color:rgba(22, 22, 22, 0.685);
         border-top-left-radius:80px;
         border-top-right-radius:80px;
         height:250px;
         width:15vw;
+        
        }
-      .engenharia{
-        background-image:url(imagens/teste.png);
+      .img-engenharia{
+        background-image:url(imagens/engenharia.png);
         width:80%;
         background-repeat:no-repeat;
-        background-size:100% 50%;
+        background-size:100% 65%;
         margin:auto;
-        margin-top:70px;
+        height:100%;
+      }
+      .img-sistemas{
+        background-image:url(imagens/dsistema.png);
+        width:80%;
+        background-repeat:no-repeat;
+        background-size:100% 65%;
+        margin:auto;
         height:250px;
+      }
+      .img-robotica{
+        background-image:url(imagens/robotica.png);
+        width:80%;
+        background-repeat:no-repeat;
+        background-size:100% 65%;
+        margin:auto;
+        height:250px;
+      }
+      .container-cursos{
+      margin:0px;
+      }
+      .img-calendario{
+        background-image:url(imagens/calendario.jpg);
+        background-size:100% 100%;
+        border-radius:12px;
+      }
+      .titulo-eventos{
+        font-size:3rem;
+      }
+      .div-iclasse{
+        background-color:white;
+        height:400px;
+      }
+      .div-fjunina{
+        background-color:white;
+        height:400px;
+      }
+      .div-talentos{
+        background-color:white;
+        height:400px;
+      }
+      .img-iclasse{
+        background-image:url(imagens/interclasse.jpeg);
+        background-size:100% 100%;
+        border-radius:8px;
+        width:90%;
+        height:40%;
+      }
+      .img-fjunina{
+        background-image: url(imagens/fjunina.jpg);
+        background-size:100% 100%;
+        border-radius:8px;
+        width:90%;
+        height:40%;
+        margin:auto;
+        margin-top:10px;
+      }
+      .img-talentos{
+        background-image:url(imagens/talentos.png);
+        background-size:100% 100%;
+        border-radius:8px;
+        width:90%;
+        height:40%;
+        margin:auto;
+        margin-top:10px;
+      }
+      .titulo-noticias{
+        font-size:3rem;
+      }
+      .img-celular{
+        background-image:url(imagens/celular-proibido.jpg);
+        background-size:100% 100%;
+        border-radius:8px;
+        height:120px;
+        width:30%;
+        height:89%;
+                
+      }
+      .div-celular-p{
+        background-color:white;
+        height:130px;
+        margin:0px;
+      }
+      .div-reforma{
+        background-color:white;
+        height:130px;
+        margin:0px;
+      }
+      .img-reforma{
+        background-image:url(imagens/reforma.jpg);
+        background-size:100% 100%;
+        border-radius:8px;
+        width:30%;
+        height:89%;
       }
     
     </style>
@@ -211,7 +304,7 @@
    </div>
                                     <!--usando bootstrap--> 
                                     <br>
-   <div class="row mb-5">
+   <div class="d-flex justify-content-around">
     <div class="col-6 container-sobre-escola ms-3">
      <h2 class="text-capitalize text-center">sobre nós</h2>   
      <p class="p-escola">A Escola Estadual Síria Marques da Silva é uma instituição de ensino comprometida com a formação integral dos seus alunos, proporcionando um ambiente de aprendizado seguro e estimulante. Com uma equipe de professores altamente capacitados e dedicados, a escola oferece uma educação de qualidade, focada no desenvolvimento acadêmico e social dos estudantes.
@@ -227,33 +320,98 @@
 
 <h2 class="text-capitalize text-center titulo-cursos">cursos e disciplinas</h2>
 <p class="text-center p-cursos">conheça nossos cursos e disciplinas</p>
-<br>
-<br>
-<div class="d-flex justify-content-center col-12">
-    <div class="div-engenharia col-2">
-        <div class="engenharia">
-           
-        </div>
+<div class="d-flex justify-content-evenly col-12 container-cursos">
+    <div class="div-engenharia col-2 ">
+        <br>
+        <div class="img-engenharia" style="margin-top:0px;"></div>
+        <p class="text-capitalize text-center fs-3">engenharia sustentavel</p>
     </div>
 
-    <div class="col-2 div-sistemas ms-4 "></div>
+    <div class="col-2 div-sistemas ms-4">
+        <br>
+        <div class="img-sistemas" style="margin-top:0px;"></div>
+        <p class="text-capitalize text-center fs-3">desenvolvimento de software</p>
+    </div>
 
-    <div class="col-2 div-robotica ms-4"></div>
+    <div class="col-2 div-robotica ms-4">
+        <br>
+        <div class="img-robotica" style="margin-top:0px;"></div>
+        <p class="text-capitalize text-center fs-3">robótica</p>
+    </div>
 </div>
-<div class="d-flex justify-content-center col-12">
-<div class="col-2 text-capitalize p-engenharia" style="margin-right:10px;">
-<p class="text-center text-capitalize">engenharia de sistemas</p>
+<br><br><br><br>
+<div class="col-10 m-auto img-calendario mt-5" style="height:700px;"></div>
+<br>
+<br>
+
+<h2 class="text-capitalize text-center titulo-eventos">eventos</h2>
+<br> <br>
+
+<div class="d-flex justify-content-around">
+    <div class="col-3 rounded-3 div-iclasse">
+    <div class="img-iclasse"></div>
+    <br>
+    <h2 class="text-capitalize text-center">jogos inter-classe</h2>
+    <p class="text-capitalize fs-5 text-start">semana especialmente pensada para os atletas da nossa escola!<p>
+        <br>
+     <p class="fs-5 text-center" style="color:orangered;">CONFIRA &gt;</p>   
+    </div>
+
+    <div class="col-3 rounded-3 div-fjunina">
+        <div class="img-fjunina"></div>
+        <h2 class="text-capitalize text-center">festa junina</h2>
+        <p class="text-capitalize fs-5 text-start">a melhor época do ano está aqui,venha prestigiar,venha prestigiar!</p>
+        <br>
+        <p class="fs-5 text-center" style="color:orangered">COMECE AGORA &gt;</p>
+
+    </div>
+
+    <div class="col-3 rounded-3 div-talentos">
+        <div class="img-talentos"></div>
+        <h2 class="text-capitalize text-center">show de talentos</h2>
+         <p class="text-capitalize text-start fs-5">suba no palco e mostre seus talentos !</p>
+         <br><br>
+         <p class="text-capitalize text-center fs-5" style="color:orangered">ASSISTA JÁ &gt;</p>
+    </div>
+
+</div>
+<br><br>
+<h2 class="text-capitalize text-center titulo-noticias">notícias</h2>
+<br>
+<div class="d-flex justify-content-around col-11 m-auto">
+    <div class="rounded-4 d-flex justify-content-around div-celular-p col-5">
+      <div class="img-celular"></div> <!--imagem-->
+
+      <div>
+        <h2>PROIBIÇÃO DO CELULAR</h2>
+        <p class="text-center fs-5" style="color:orangered">LEIA MAIS &gt;</p>
+      </div><!--texto-->
+
+    </div>
+
+    <div class="d-flex justify-content-around div-reforma rounded-4 col-5">
+        <div class="img-reforma ms-2 mt-2"></div><!--imagem-->
+
+        <div>
+            <h2>REFORMA DA QUADRA</h2>
+            <p class="text-center fs-5" style="color:orangered">LEIA MAIS &gt;</p>
+        </div> <!--texto-->
+
+    </div>
+
 </div>
 
-<div class="text-capitalize p-dsistema col-2" style="margin-right:10px;">
-    <p class="text-center text-capitalize">desenvolvimento de sistemas</p>
-</div>
+<div class="d-flex justify-content-around col-11 m-auto">
+    <div class="rounded-4 d-flex justify-content-around div-reuniao col-5">
+        <div class="img-reuniao ms-2 mt-2"></div><!--imagem-->
 
-<div class="text-capitalize p-robotica col-2">
-    <p class="text-center text-capitalize">robotica</p>
-</div>
+        <div></div> <!--texto-->
+
+    </div>
 
 </div>
+    <br>
+    <br>
   </main>  
 </body>
 </html>
