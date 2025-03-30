@@ -4,7 +4,10 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>forum escola</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" defer></script>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+
     <style>
         html{
             font-size:16px;
@@ -12,12 +15,12 @@
         body{
             background-color:rgba(128, 128, 128, 0.253);
             margin:0px;
-            overflow:hidden;
+            overflow-x:hidden;
         }
         main{
             background-color:rgba(128, 128, 128, 0.253);
             width:100vw;
-            height:100vh;
+            height:300vh;
         }
         .cabecalho{
             display:flex;
@@ -90,34 +93,106 @@
         justify-content: end;
         list-style-type:none;
        }
-       li{
+       a{
         margin-left:20px;
         font-family:Arial, Helvetica, sans-serif;
+        text-decoration:none;
        }
-       li:hover{
+       a:hover{
         text-decoration:underline;
+        color:white;
        }
+       a:active{
+        color:white;
+       }
+       a:visited{
+        color:white !important;
+       }
+       #img-escola{
+        background-image:url(imagens/escola.png);
+        background-size:100% 100%;
+        border-radius:8px;
+        width:45vw;
+        height:300px;
+       }
+       .p-escola{
+        text-align:justify;
+        text-indent:30px;
+       }
+       .container-sobre-escola{
+        border:2px solid black;
+       }
+       .p-cursos{
+        font-size:1.4rem
+       }
+       .titulo-cursos{
+        font-size:2.5rem;
+       }
+       .div-engenharia{
+        background-color:rgba(22, 22, 22, 0.288);
+        border-top-left-radius:80px;
+        border-top-right-radius:80px;
+        height:250px;
+        width:15vw;
+       }
+       .div-sistemas{
+        background-color:rgba(22, 22, 22, 0.288);
+        border-top-left-radius:80px;
+        border-top-right-radius:80px;
+        height:250px;
+        width:15vw;
+       }
+       .div-robotica{
+        background-color:rgba(22, 22, 22, 0.288);
+        border-top-left-radius:80px;
+        border-top-right-radius:80px;
+        height:250px;
+        width:15vw;
+       }
+      .engenharia{
+        background-image:url(imagens/teste.png);
+        width:80%;
+        background-repeat:no-repeat;
+        background-size:100% 50%;
+        margin:auto;
+        margin-top:70px;
+        height:250px;
+      }
+    
     </style>
 </head>
 <body>
 
-  <header>
+  <header class="fixed-top">
     <nav>
      <ul id="ul">
-        <li>Home</li>
-        <li>Sobre A Escola</li>
-        <li>Cursos</li>
-        <li>Calendário Escolar</li>
-        <li>Eventos</li>
-        <li>Notícias</li>
-        <li>Fale Consosco</li>
+        <a href="#img"><li>Home</li></a>
+
+        <a href="">
+            <li>Sobre A Escola</li>
+        </a>
+        <a href="">
+            <li>Cursos</li>
+        </a>
+        <a href="">
+            <li>Calendário Escolar</li>
+        </a>
+        <a href="">
+            <li>Eventos</li>
+        </a>
+        <a href="">
+            <li>Notícias</li>
+        </a>
+        <a href="">
+            <li>Fale Consosco</li>
+        </a>
      </ul>
     </nav>
   </header>
-
+<br><br>
   <main>
    <div class="cabecalho">
-      <div class="img-pequena">
+      <div class="img-pequena" id="img">
 
       </div> 
       
@@ -132,9 +207,53 @@
      
         <a href="https://www.facebook.com/pages/E.E.%20Siria%20Marques/431827370249367/#" target="_blank" rel="external"><i class="bi-facebook  face"></i></a>
         <a href="https://www.instagram.com/siriamarques_informa/?hl=en" target="_blank" rel="external"><i class="bi-instagram insta"></i></a>
-        <a href="https://www.mg.gov.br/instituicao_unidade/escola-estadual-siria-marques-da-silva" target="_blank" rel="external"><i class="bi-twitter-x xwitter"></i></a>
-       
+        <a href="https://x.com/governomg?lang=en" target="_blank" rel="external"><i class="bi-twitter-x xwitter"></i></a>     
    </div>
+                                    <!--usando bootstrap--> 
+                                    <br>
+   <div class="row mb-5">
+    <div class="col-6 container-sobre-escola ms-3">
+     <h2 class="text-capitalize text-center">sobre nós</h2>   
+     <p class="p-escola">A Escola Estadual Síria Marques da Silva é uma instituição de ensino comprometida com a formação integral dos seus alunos, proporcionando um ambiente de aprendizado seguro e estimulante. Com uma equipe de professores altamente capacitados e dedicados, a escola oferece uma educação de qualidade, focada no desenvolvimento acadêmico e social dos estudantes.
+
+        Os alunos têm acesso a uma estrutura moderna e bem equipada, com espaços adequados para aulas teóricas, práticas e atividades extracurriculares. O ambiente escolar é acolhedor e promotor de valores como respeito, disciplina e colaboração, incentivando o espírito de equipe e o bom relacionamento entre alunos e professores.
+        
+        A escola também se dedica a formar cidadãos críticos e conscientes, capazes de enfrentar os desafios do mundo contemporâneo.</p>
+    </div>
+
+    <div id="img-escola" class="col-6 ms-4"></div>
+   </div>    
+   <br>
+
+<h2 class="text-capitalize text-center titulo-cursos">cursos e disciplinas</h2>
+<p class="text-center p-cursos">conheça nossos cursos e disciplinas</p>
+<br>
+<br>
+<div class="d-flex justify-content-center col-12">
+    <div class="div-engenharia col-2">
+        <div class="engenharia">
+           
+        </div>
+    </div>
+
+    <div class="col-2 div-sistemas ms-4 "></div>
+
+    <div class="col-2 div-robotica ms-4"></div>
+</div>
+<div class="d-flex justify-content-center col-12">
+<div class="col-2 text-capitalize p-engenharia" style="margin-right:10px;">
+<p class="text-center text-capitalize">engenharia de sistemas</p>
+</div>
+
+<div class="text-capitalize p-dsistema col-2" style="margin-right:10px;">
+    <p class="text-center text-capitalize">desenvolvimento de sistemas</p>
+</div>
+
+<div class="text-capitalize p-robotica col-2">
+    <p class="text-center text-capitalize">robotica</p>
+</div>
+
+</div>
   </main>  
 </body>
 </html>
